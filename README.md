@@ -1,12 +1,12 @@
 # EEG-AAD
 <div align="center">
 
-# Baselines for EEG-AAD 2025: EEG Auditory Attention Decoding Challenge
+# Baselines for EEG-AAD 2026: EEG Auditory Attention Decoding Challenge
 
 </div>
 
 # Overview
-Baseline implementation for the <a href='https://fchest.github.io/nips-aad/'>EEG-AAD Auditory Attention Decoding Challenge</a>.
+Baseline implementation for the <a href='https://fchest.github.io/icassp-aad/'>EEG-AAD 2026: Auditory Attention Decoding Challenge</a>.
 
 # Data
 We provide a multi-modal AAD (MM-AAD) dataset[1] consisting of EEG data collected from 40 subjects in two settings: audio-only and audio-visual scenes. 
