@@ -73,8 +73,8 @@ def load_model(args, name=''):
 
 
 def getData(name="s1", time_len=1, dataset="MM-AAD"):
-    MMAAD_document_path1 = "/media/gaoyoudian/DXG/dataset_v2/pre_avall"   #replace your data_path
-    MMAAD_document_path2 = "/media/gaoyoudian/DXG/dataset_v2/pre_aoall"    #replace your data_path
+    MMAAD_document_path1 = "/media/gaoyoudian/DXG/dataset_v2/pre_aoall"   #replace your data_path for training
+    MMAAD_document_path2 = "/media/gaoyoudian/DXG/dataset_v2/pre_avall"    #replace your data_path for validation
     if dataset == 'MM-AAD':
         return task_loader.get_MMAAD_data(name, time_len, MMAAD_document_path1, MMAAD_document_path2)
 
