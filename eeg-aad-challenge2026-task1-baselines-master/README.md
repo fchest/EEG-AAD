@@ -29,19 +29,21 @@ No significant changes were applied to the original architectures.
 -Task1 Cross-subject: we provided 30 subjects for training and validation. We selected 4 subjects to serve as a separate held-out-subjects validation set (val_subject). To encourage participants to thoroughly explore model generalization and the robustness of validation strategies, this task allows and recommends that participants customize their validation set partitioning schemes.
 Models were trained using the Adam optimizer for 100 epochs. For each subject of tasks, we get 6,580 decision windows. The model was then fed all the windows. Additionally, we set the batch size to 128 and utilized the Adam optimizer with a learning rate of 5e-4 and weight decay of 3e-4 to train the model.
 
--Task2 Cross-Session: This track requires participants to bulid AAD models capable of decoding auditory attention categories from EEG signals of scenarios that subjects have never seen before. Data from 30 subjects in two scenarios are provided, where the audio-visual scenario data from the same subject is used for training, and the audio-only scenario data is used for validation. 
+-Task2 Cross-Session: This track requires participants to bulid AAD models capable of decoding auditory attention categories from EEG signals of scenarios that subjects have never seen before. Data from 30 subjects in two scenarios are provided, where the audio-only scenario data from the same subject is used for training, and the audio-visual scenario data is used for validation. Additionally, the audio-only data for the 10 test subjects are provided in advance during the training phase, the participants may use this data to pre-train the model for the final test.
+
 
 ## Inference
 -Task1 Cross-subject: we provided 10 unseen subjects for test. For inference, same as for validation, each unseen test subject EEG data was first segmented into 6,580 decision windows. The optimal model saved from the validation set was used for inference.
 
--Task2 Cross-Session: For the testing phase, we provided 10 unseen subjects for test, each unseen test subject EEG data was first segmented into 6,580 decision windows, following the same process as validation: models trained on the audio-visual scenario are tested on data from the audio-only scenario. 
+-Task2 Cross-Session: For the testing phase, we provided 10 unseen subjects for test, each unseen test subject EEG data was first segmented into 6,580 decision windows, following the same process as validation: models trained on the audio-only scenario (Already released during the training phase
+) are tested on data from the audio-visual scenario. 
 
 # Results
 Our strategy yields the following results that serve as baseline
 
 | DARNet            | Cross-subject | Cross-session |
 |-------------------|---------------|---------------|
-| Val Acc           |    53.1       |      54.9     |
+| Val Acc           |    53.1       |      57.33    |
                     
 
 # How to run
