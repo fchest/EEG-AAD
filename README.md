@@ -43,7 +43,7 @@ Our strategy yields the following results that serve as baseline
 
 | DARNet            | Cross-subject | Cross-session |
 |-------------------|---------------|---------------|
-| Val Acc           |    53.1       |      57.33    |
+| Val Acc           |    53.1       |      53.34    |
                     
 
 # How to run
