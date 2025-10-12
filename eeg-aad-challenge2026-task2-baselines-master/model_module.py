@@ -149,9 +149,11 @@ class DARNet(nn.Module):
         x_src = self.token_embedding(x)  
         new_x = []
         x_src1, new_src1 = self.stack1(x_src) 
+        new_x.append(new_src1)
         x_src2, new_src2 = self.stack2(x_src1) 
         new_x.append(new_src2)
         out = torch.cat(new_x, -1) 
         out = self.flatten(out) 
         out = self.out(out) 
+
         return out
