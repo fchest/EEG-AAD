@@ -43,7 +43,7 @@ Our strategy yields the following results that serve as baseline
 
 | DARNet            | Cross-subject | Cross-session |
 |-------------------|---------------|---------------|
-| Val Acc           |    53.1       |      57.33    |
+| Val Acc           |    53.1       |      53.34    |
                     
 
 # How to run
@@ -89,3 +89,4 @@ Each csv has only two columns:
 [1] Cunhang Fan, Hongyu Zhang, Qinke Ni, Jingjing Zhang, Jianhua Tao, Jian Zhou, Jiangyan Yi, Zhao Lv, and Xiaopei Wu. eeing helps hearing: A multi-modal dataset and a mamba-based dual branch parallel network for auditory attention decoding. Information Fusion, page 102946, 2025.
 
 [2] Sheng Yan, Cunhang Fan, Hongyu Zhang, Xiaoke Yang, Jianhua Tao, and Zhao Lv. Darnet: Dual attention refinement network with spatiotemporal construction for auditory attention detection. Advances in Neural Information Processing Systems,37:31688–31707, 2024. 
+
