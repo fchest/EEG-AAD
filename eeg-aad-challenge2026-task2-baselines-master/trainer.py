@@ -255,7 +255,7 @@ if __name__ == '__main__':
     args.start_time = datetime.now().strftime(f"task2_AAD_{args.dataset}_%Y-%m-%d-%H-%M-%S")
     print('start time:',args.start_time)
 
-    options = {'MM-AAD':[40 ,32, 20, 128]}
+    options = {'MM-AAD':[30 ,32, 20, 128]} #30 10
     args.subject_number = options[args.dataset][0]
     args.eeg_channel = options[args.dataset][1]
     args.trail_number = options[args.dataset][2]
@@ -320,4 +320,5 @@ if __name__ == '__main__':
     print('=' * 108)
     now1 = datetime.now().strftime("%y-%m-%d-%H:%M:%S")
     print('end time:',now1)
+
 
