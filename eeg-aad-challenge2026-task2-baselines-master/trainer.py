@@ -181,10 +181,7 @@ class Trynetwork():
                                                                                                                                                 val_loss,
                                                                                                                                                 train_acc,
                                                                                                                                                 val_acc))
-            '''if val_acc > best_acc:
-                save_model(args, testsub_name, best_acc, val_acc, self.model, epoch, args.model)
-                best_acc = val_acc
-                best_epoch = epoch'''
+           
             if  val_acc > best_acc:
                 save_model(args, testsub_name, best_acc, val_acc, self.model, epoch, args.model)
                 best_acc = val_acc
@@ -323,3 +320,4 @@ if __name__ == '__main__':
     print('=' * 108)
     now1 = datetime.now().strftime("%y-%m-%d-%H:%M:%S")
     print('end time:',now1)
+
