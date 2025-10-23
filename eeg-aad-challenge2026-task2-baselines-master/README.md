@@ -52,7 +52,7 @@ Our strategy yields the following results that serve as baseline
 -Python3.9
  pip install -r requirements.txt
 
-All the baselies were tested on a single NVIDIA RTX 4090 GPU.
+All the baselines were tested on a single NVIDIA RTX 4090 GPU.
 
 
 ### **Train a model**
@@ -89,5 +89,6 @@ Each csv has only two columns:
 [1] Cunhang Fan, Hongyu Zhang, Qinke Ni, Jingjing Zhang, Jianhua Tao, Jian Zhou, Jiangyan Yi, Zhao Lv, and Xiaopei Wu. eeing helps hearing: A multi-modal dataset and a mamba-based dual branch parallel network for auditory attention decoding. Information Fusion, page 102946, 2025.
 
 [2] Sheng Yan, Cunhang Fan, Hongyu Zhang, Xiaoke Yang, Jianhua Tao, and Zhao Lv. Darnet: Dual attention refinement network with spatiotemporal construction for auditory attention detection. Advances in Neural Information Processing Systems,37:31688–31707, 2024. 
+
 
 
