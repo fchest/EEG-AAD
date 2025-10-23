@@ -52,7 +52,7 @@ Our strategy yields the following results that serve as baseline
 -Python3.9
  pip install -r requirements.txt
 
-All the baselies were tested on a single NVIDIA RTX 4090 GPU.
+All the baselines were tested on a single NVIDIA RTX 4090 GPU.
 
 
 ### **Train a model**
