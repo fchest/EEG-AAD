@@ -43,7 +43,7 @@ Our strategy yields the following results that serve as baseline
 
 | DARNet            | Cross-subject | Cross-session |
 |-------------------|---------------|---------------|
-| Val Acc           |    53.1       |      53.34    |
+| Val Acc           |    53.1       |      53.3     |
                     
 
 # How to run
@@ -52,7 +52,7 @@ Our strategy yields the following results that serve as baseline
 -Python3.9
  pip install -r requirements.txt
 
-All the baselies were tested on a single NVIDIA RTX 4090 GPU.
+All the baselines were tested on a single NVIDIA RTX 4090 GPU.
 
 
 ### **Train a model**
