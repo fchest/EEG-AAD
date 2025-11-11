@@ -75,10 +75,14 @@ Always specify:
 As an example you can run:
 
 ``` 
-python inference.py --model DARNet --resume exps/cross-subject/DARNet/baseline_2025-02-28-01-39-14
+python inference.py 
+--model_name DARNet 
+--model_path exps/cross-subject/DARNet/baseline_2025-02-28-01-39-14 
+--data_path  testdata/
+--out_csv ./results_task1/cross_subject
 ```
 
-Running inference on **cross subject** will create a csv file named *results_cross_subject_test_subject.csv* for the held-out-subjects test set.
+Running inference on **cross subject** will create a csv file named *results_task1/cross_subject/S31.csv* for the held-out-subjects test set.
 
 Each csv has only two columns:
 - **id**: the id of the sample
