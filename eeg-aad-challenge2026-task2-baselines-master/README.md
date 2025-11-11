@@ -81,17 +81,18 @@ python inference.py
 --out_csv ./results_task1/cross_subject
 ```
 
-Running inference on **cross subject** will create a csv file named *results_task1/cross_subject/S31.csv* for the held-out-subjects test set.
+Performing inference in the cross-subject setting will generate a CSV file named results_task1/cross_subject_S31.csv, which stores the evaluation results on the held‐out subject test set.
 
 Each csv has only two columns:
 - **id**: the id of the sample
-- **prediction**: the predicted class
+- **label**: the predicted class
 
 
 # References
 [1] Cunhang Fan, Hongyu Zhang, Qinke Ni, Jingjing Zhang, Jianhua Tao, Jian Zhou, Jiangyan Yi, Zhao Lv, and Xiaopei Wu. eeing helps hearing: A multi-modal dataset and a mamba-based dual branch parallel network for auditory attention decoding. Information Fusion, page 102946, 2025.
 
 [2] Sheng Yan, Cunhang Fan, Hongyu Zhang, Xiaoke Yang, Jianhua Tao, and Zhao Lv. Darnet: Dual attention refinement network with spatiotemporal construction for auditory attention detection. Advances in Neural Information Processing Systems,37:31688–31707, 2024. 
+
 
 
 
