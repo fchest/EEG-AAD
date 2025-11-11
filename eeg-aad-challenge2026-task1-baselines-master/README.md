@@ -1,4 +1,4 @@
-<div align="center">
+<img width="609" height="208" alt="image" src="https://github.com/user-attachments/assets/4a97329b-3ca1-437e-9361-acbd2b076bb6" /><div align="center">
 
 # Baselines for EEG-AAD 2026: EEG Auditory Attention Decoding Challenge
 
@@ -82,11 +82,11 @@ python inference.py
 --out_csv ./results_task1/cross_subject
 ```
 
-Running inference on **cross subject** will create a csv file named *results_task1/cross_subject/S31.csv* for the held-out-subjects test set.
+Performing inference in the cross-subject setting will generate a CSV file named results_task1/cross_subject_S31.csv, which stores the evaluation results on the held‐out subject test set.
 
 Each csv has only two columns:
 - **id**: the id of the sample
-- **prediction**: the predicted class
+- **label**: the predicted class
 
 
 # References
