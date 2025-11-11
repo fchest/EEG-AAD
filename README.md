@@ -80,8 +80,7 @@ python inference.py
 --data_path  testdata/
 --out_csv ./results_task1/cross_subject
 ```
-
-Running inference on **cross subject** will create a csv file named *results_task1/cross_subject/S31.csv* for the held-out-subjects test set.
+performing inference in the cross-subject setting will generate a CSV file named results_task1/cross_subject_S31.csv, which stores the evaluation results on the held‐out subject test set.
 
 Each csv has only two columns:
 - **id**: the id of the sample
