@@ -35,8 +35,7 @@ Models were trained using the Adam optimizer for 100 epochs. For each subject of
 ## Inference
 -Task1 Cross-subject: we provided 10 unseen subjects for test. For inference, same as for validation, each unseen test subject EEG data was first segmented into 6,580 decision windows. The optimal model saved from the validation set was used for inference.
 
--Task2 Cross-Session: For the testing phase, we provided 10 unseen subjects for test, each unseen test subject EEG data was first segmented into 6,580 decision windows, following the same process as validation: models trained on the audio-only scenario (Already released during the training phase
-) are tested on data from the audio-visual scenario. 
+-Task2 Cross-Session: For the testing phase, we provided 10 unseen subjects for test, each unseen test subject EEG data was first segmented into 6,580 decision windows, following the same process as validation: models trained on the audio-only scenario (Already released during the training phase) are tested on data from the audio-visual scenario. During the testing phase, due to the limitation of the test data, participants may choose to use the weights from the final training epoch to generate the test results. In addition, considering that each participant may have their own data processing methods and model designs, they can decide whether to apply CSP processing when loading the test data.
 
 # Results
 Our strategy yields the following results that serve as baseline
@@ -75,10 +74,14 @@ Always specify:
 As an example you can run:
 
 ``` 
-python inference.py --model DARNet --resume exps/cross-subject/DARNet/baseline_2025-02-28-01-39-14
+python inference.py 
+--model_name DARNet 
+--model_path exps/cross-subject/DARNet/baseline_2025-02-28-01-39-14 
+--data_path  testdata/
+--out_csv ./results_task1/cross_subject
 ```
 
-Running inference on **cross subject** will create a csv file named *results_cross_subject_test_subject.csv* for the held-out-subjects test set.
+Running inference on **cross subject** will create a csv file named *results_task1/cross_subject/S31.csv* for the held-out-subjects test set.
 
 Each csv has only two columns:
 - **id**: the id of the sample
@@ -89,6 +92,7 @@ Each csv has only two columns:
 [1] Cunhang Fan, Hongyu Zhang, Qinke Ni, Jingjing Zhang, Jianhua Tao, Jian Zhou, Jiangyan Yi, Zhao Lv, and Xiaopei Wu. eeing helps hearing: A multi-modal dataset and a mamba-based dual branch parallel network for auditory attention decoding. Information Fusion, page 102946, 2025.
 
 [2] Sheng Yan, Cunhang Fan, Hongyu Zhang, Xiaoke Yang, Jianhua Tao, and Zhao Lv. Darnet: Dual attention refinement network with spatiotemporal construction for auditory attention detection. Advances in Neural Information Processing Systems,37:31688–31707, 2024. 
+
 
 
 
