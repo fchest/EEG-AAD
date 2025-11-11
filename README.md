@@ -84,7 +84,7 @@ performing inference in the cross-subject setting will generate a CSV file named
 
 Each csv has only two columns:
 - **id**: the id of the sample
-- **prediction**: the predicted class
+- **label**: the predicted class
 
 
 # References
