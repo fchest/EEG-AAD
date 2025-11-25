@@ -1,5 +1,3 @@
-<img width="609" height="208" alt="image" src="https://github.com/user-attachments/assets/4a97329b-3ca1-437e-9361-acbd2b076bb6" /><div align="center">
-
 # Baselines for EEG-AAD 2026: EEG Auditory Attention Decoding Challenge
 
 </div>
